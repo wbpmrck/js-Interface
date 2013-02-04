@@ -12,7 +12,7 @@ js-Interface is a simple library to emulate a 'Interface Patten' in javascript.I
 #Demo
 
 ##1、create your own Interface
-```
+```js
 var Interface = require('interface').Interface;
 var IHuman = new Interface('IHuman',['run','shout']);//done! now you have a Interface. it has two methods.
 //var IHuman = new Interface('IHuman','run');//this works too!
@@ -21,7 +21,7 @@ var IHuman = new Interface('IHuman',['run','shout']);//done! now you have a Inte
 
 
 ##2、create your own Class,and implement the Interface
-```
+```js
 //define a class
 function SupperMan(name,speed){
     this.name = name;
@@ -37,7 +37,7 @@ man1.run(); //now although we haven't implement the 'run' method, but this will 
 
 
 ##3、implement the Interface
-```
+```js
 SupperMan.prototype.run=function(){
     console.log('%s run at speed of %s',this.name,this.speed);
 }
@@ -48,7 +48,7 @@ man1.run();//ok,display:  tom run at speed of 14km/h
 ```
 
 ##4、check implements
-```
+```js
 
 //1、ensure all methods be implement,if not,return the error message
 if(!IHuman.checkImplementsError(man1)){
@@ -81,5 +81,7 @@ if(!IHuman.checkImplementsError(SupperMan)){
 else
     console.log(IHuman.checkImplementsError(SupperMan));
 ```
+## License
 
+MIT
 ##End
