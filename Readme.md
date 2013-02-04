@@ -1,7 +1,7 @@
 #js-Interface
 <hr/>
 ##What is this?
-js-Interface is a simple library to emulate a 'Interface Patten' in javascript.It's very handy and light weight.
+js-Interface is a simple library to emulate a 'Interface Patten' in javascript(in node.js).It's very handy and light weight.
 <hr/>
 ##Features
 <ul>
